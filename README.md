@@ -1,4 +1,4 @@
-# 3-merchandise
+# 3-Electrobox-Electronics-Store
 
 ## Project setup
 ```
