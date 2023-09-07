@@ -1,4 +1,5 @@
-# 3-merchandise
+# 3-Electrobox-Electronics-Store
+# Live Demo : https://abduljaleel-electrobox.netlify.app/
 
 ## Project setup
 ```
