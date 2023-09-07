@@ -70,12 +70,13 @@ export default {
     };
   },
   mounted() {
-    this.title = this.$route.path.slice(1).replaceAll("-", " ");
+    this.title = this.$route.params.name.replaceAll("-", " ");
+    console.log(this.$route);
   },
   watch: {
     $route: {
       handler() {
-        this.title = this.$route.path.slice(1).replaceAll("-", " ");
+        this.title = this.$route.params.name.replaceAll("-", " ");
       },
     },
   },
