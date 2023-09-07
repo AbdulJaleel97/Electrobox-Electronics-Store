@@ -62,11 +62,9 @@ export default {};
     }
   }
   @media (max-width: 1199px) {
-    & {
-      .card {
-        img {
-          border-radius: 0;
-        }
+    .card {
+      img {
+        border-radius: 0;
       }
     }
   }

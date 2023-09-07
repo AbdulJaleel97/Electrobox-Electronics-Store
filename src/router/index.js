@@ -26,7 +26,7 @@ const routes = [
       title: "Electbox - Contact Us",
     },
   },
-  // Start Blog Routes
+  // Blog Routes
   {
     name: "blog",
     path: "/blog",
@@ -43,7 +43,6 @@ const routes = [
       title: "Electbox - BLOG",
     },
   },
-  // End Blog Routes
   // Middle Navbar Icon Components
   {
     name: "cart",
@@ -117,4 +116,5 @@ const router = createRouter({
 router.beforeEach((to) => {
   document.title = to.meta.title;
 });
+
 export default router;

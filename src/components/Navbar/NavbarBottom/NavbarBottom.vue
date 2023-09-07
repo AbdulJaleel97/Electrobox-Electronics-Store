@@ -152,15 +152,11 @@ export default {
   background-color: var(--bg-color);
   .container {
     @media (max-width: 768px) {
-      & {
-        max-width: 100%;
-        padding: 0;
-      }
+      max-width: 100%;
+      padding: 0;
     }
     @media (max-width: 420px) {
-      & {
-        max-width: 100%;
-      }
+      max-width: 100%;
     }
     .pages-links {
       display: flex;
@@ -169,30 +165,22 @@ export default {
       width: 80%;
       margin-left: auto;
       @media (max-width: 1199px) {
-        & {
-          width: 100%;
-          padding: 10px 0;
-        }
+        width: 100%;
+        padding: 10px 0;
       }
       @media (max-width: 767px) {
-        & {
-          width: 100%;
-          padding: 10px 14px;
-        }
+        width: 100%;
+        padding: 10px 14px;
       }
       .menu {
         font-size: 19px;
         color: white;
         @media (min-width: 991px) {
-          & {
-            display: none;
-          }
+          display: none;
         }
         @media (max-width: 991px) {
-          & {
-            flex: 1;
-            justify-content: start;
-          }
+          flex: 1;
+          justify-content: start;
         }
       }
       .links {
@@ -200,47 +188,43 @@ export default {
           font-weight: 500;
         }
         @media (min-width: 991px) {
-          & {
-            flex: 1;
-            ul {
-              display: flex;
-              color: white;
-              img {
-                display: none;
+          flex: 1;
+          ul {
+            display: flex;
+            color: white;
+            img {
+              display: none;
+            }
+            span {
+              display: none;
+            }
+            @media (max-width: 1199px) {
+              & li:nth-child(2) {
+                margin-left: 0;
               }
-              span {
-                display: none;
-              }
-              @media (max-width: 1199px) {
-                & li:nth-child(2) {
-                  margin-left: 0;
+            }
+            & li:first-child {
+              margin-left: 2px;
+            }
+            li {
+              padding: 10px 0;
+              margin: 0 20px;
+              a {
+                font-weight: 500;
+                &:hover {
+                  color: var(--yellow);
+                  cursor: pointer;
                 }
               }
-              & li:first-child {
-                margin-left: 2px;
-              }
-              li {
-                padding: 10px 0;
-                margin: 0 20px;
-                a {
-                  font-weight: 500;
-                  &:hover {
-                    color: var(--yellow);
-                    cursor: pointer;
-                  }
-                }
-              }
-              .hide-link {
-                display: none;
-              }
+            }
+            .hide-link {
+              display: none;
             }
           }
         }
         @media (max-width: 991px) {
-          & {
-            .home-ul {
-              display: none;
-            }
+          .home-ul {
+            display: none;
           }
         }
         .menu-links {
@@ -314,9 +298,7 @@ export default {
             }
           }
           @media (min-width: 991px) {
-            & {
-              display: none;
-            }
+            display: none;
           }
         }
       }
@@ -336,10 +318,8 @@ export default {
         }
       }
       @media (max-width: 420px) {
-        & {
-          .need-help {
-            font-size: 13.5px;
-          }
+        .need-help {
+          font-size: 13.5px;
         }
       }
     }

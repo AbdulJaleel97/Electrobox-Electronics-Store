@@ -18,10 +18,8 @@ export default {};
     }
   }
   @media (max-width: 1199px) {
-    & {
-      display: flex;
-      justify-content: center;
-    }
+    display: flex;
+    justify-content: center;
   }
   img {
     max-width: 100%;

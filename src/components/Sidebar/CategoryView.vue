@@ -100,15 +100,13 @@ $(() => {
     }
   }
   @media (max-width: 1199px) {
-    & {
-      button {
+    button {
+      margin-top: 0;
+      border-radius: 0;
+    }
+    .holder {
+      .card-body {
         margin-top: 0;
-        border-radius: 0;
-      }
-      .holder {
-        .card-body {
-          margin-top: 0;
-        }
       }
     }
   }

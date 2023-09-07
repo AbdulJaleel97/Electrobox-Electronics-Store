@@ -31,14 +31,10 @@ export default {};
     background-color: var(--yellow);
   }
   @media (min-width: 1199px) {
-    & {
-      flex: 1;
-    }
+    flex: 1;
   }
   @media (max-width: 1199px) {
-    & {
-      display: none;
-    }
+    display: none;
   }
 }
 </style>

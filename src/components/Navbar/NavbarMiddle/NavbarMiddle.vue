@@ -45,10 +45,8 @@ $(() => {
       justify-content: space-between;
     }
     @media (max-width: 767px) {
-      & {
-        max-width: 100%;
-        padding: 20px 20px 20px 10px;
-      }
+      max-width: 100%;
+      padding: 20px 20px 20px 10px;
     }
   }
   &.fixed {
