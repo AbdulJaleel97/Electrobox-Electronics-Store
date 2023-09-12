@@ -24,17 +24,10 @@
           </div>
           <div class="card-body">
             <span v-if="product.stars === 5" style="color: var(--yellow)">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
+              <i v-for="e in 5" :key="e" class="fa-solid fa-star"></i>
             </span>
             <span v-else style="color: var(--yellow)">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
+              <i v-for="e in 4" :key="e" class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star" style="color: grey"></i>
             </span>
             <p class="card-text">
