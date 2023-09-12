@@ -11,17 +11,10 @@
       <div class="item-details">
         <h4 class="item-name">{{ product.description }}</h4>
         <span v-if="product.stars === 5" style="color: var(--yellow)">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
+          <i v-for="e in 5" :key="e" class="fa-solid fa-star"></i>
         </span>
         <span v-else style="color: var(--yellow)">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
+          <i v-for="e in 4" :key="e" class="fa-solid fa-star"></i>
           <i class="fa-solid fa-star" style="color: grey"></i>
         </span>
         <div class="price">
