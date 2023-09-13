@@ -134,12 +134,12 @@
               </h2>
             </div>
             <div class="modal-buttons">
-              <router-link class="view-cart" :to="{ path: '/my-cart' }">
+              <router-link class="view-cart" to="/my-cart">
                 <button data-bs-dismiss="modal" aria-label="Close">
                   VIEW MY CART ({{ this.$store.state.cartTotal }})
                 </button>
               </router-link>
-              <router-link class="checkout" :to="{ path: '/profile-page' }">
+              <router-link class="checkout" to="/profile-page">
                 <button data-bs-dismiss="modal" aria-label="Close">
                   CHECKOUT
                 </button>

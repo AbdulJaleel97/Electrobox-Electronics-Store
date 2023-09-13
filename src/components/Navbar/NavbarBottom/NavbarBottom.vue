@@ -9,22 +9,20 @@
         </div>
         <div class="links">
           <ul class="home-ul">
-            <li><router-link :to="{ path: '/' }">HOME</router-link></li>
+            <li><router-link to="/">HOME</router-link></li>
             <li>
-              <router-link :to="{ path: '/catalog' }">CATALOG</router-link>
+              <router-link to="/catalog">CATALOG</router-link>
             </li>
             <li>
-              <router-link :to="{ path: '/contact' }">CONTACT</router-link>
+              <router-link to="/contact">CONTACT</router-link>
             </li>
-            <li><router-link :to="{ path: '/blog' }">BLOG</router-link></li>
-            <li><router-link :to="{ path: '/my-cart' }">CART</router-link></li>
+            <li><router-link to="/blog">BLOG</router-link></li>
+            <li><router-link to="/my-cart">CART</router-link></li>
             <li>
-              <router-link :to="{ path: '/compare' }" class="hide-link"
-                >COMPARE</router-link
-              >
+              <router-link to="/compare" class="hide-link">COMPARE</router-link>
             </li>
             <li>
-              <router-link :to="{ path: '/wishlist' }" class="hide-link"
+              <router-link to="/wishlist" class="hide-link"
                 >WISHLIST</router-link
               >
             </li>
@@ -42,34 +40,32 @@
                   </span>
                 </div>
                 <li>
-                  <router-link @click="toggleMenu()" :to="{ path: '/' }"
-                    >HOME</router-link
-                  >
+                  <router-link @click="toggleMenu()" to="/">HOME</router-link>
                 </li>
                 <li>
-                  <router-link @click="toggleMenu()" :to="{ path: '/catalog' }"
+                  <router-link @click="toggleMenu()" to="/catalog"
                     >CATALOG</router-link
                   >
                 </li>
                 <li>
-                  <router-link @click="toggleMenu()" :to="{ path: '/contact' }"
+                  <router-link @click="toggleMenu()" to="/contact"
                     >CONTACT</router-link
                   >
                 </li>
                 <li>
-                  <router-link @click="toggleMenu()" :to="{ path: '/blog' }"
+                  <router-link @click="toggleMenu()" to="/blog"
                     >BLOG</router-link
                   >
                 </li>
                 <li>
-                  <router-link @click="toggleMenu()" :to="{ path: '/my-cart' }"
+                  <router-link @click="toggleMenu()" to="/my-cart"
                     >CART ({{ this.$store.state.cartTotal }})</router-link
                   >
                 </li>
                 <li>
                   <router-link
                     @click="toggleMenu()"
-                    :to="{ path: '/compare' }"
+                    to="/compare"
                     class="hide-link"
                     >COMPARE ({{ this.$store.state.compareTotal }})</router-link
                   >
@@ -77,7 +73,7 @@
                 <li>
                   <router-link
                     @click="toggleMenu()"
-                    :to="{ path: '/wishlist' }"
+                    to="/wishlist"
                     class="hide-link"
                     >WISHLIST ({{ this.$store.state.favTotal }})</router-link
                   >
@@ -112,7 +108,7 @@
             </div>
           </div>
         </div>
-        <router-link :to="{ path: '/contact' }" class="need-help"
+        <router-link to="/contact" class="need-help"
           >Need Help? (+99) 0123-456-789</router-link
         >
       </div>

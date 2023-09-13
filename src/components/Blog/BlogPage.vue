@@ -39,7 +39,7 @@
       convallis condimentum auctor sit dui. Urna pretium elit mauris cursus
       Curabitur at elit Vestibulum.
     </p>
-    <router-link :to="{ path: '/blog' }">
+    <router-link to="/blog">
       <i class="fa-solid fa-arrow-left-long"></i> Back to Blog
     </router-link>
   </div>

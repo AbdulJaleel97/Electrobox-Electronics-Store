@@ -80,7 +80,7 @@
           </div>
         </div>
       </div>
-      <router-link class="continue" :to="{ path: '/catalog' }">
+      <router-link class="continue" to="/catalog">
         Continue Shopping
       </router-link>
       <div class="checkout">
@@ -102,18 +102,14 @@
             <span class="total-num">${{ totalPrice }}</span>
           </div>
           <div class="taxes">Taxes and shipping calculated at checkout</div>
-          <router-link class="pay" :to="{ path: '/profile-page' }">
-            CHECKOUT
-          </router-link>
+          <router-link class="pay" to="/profile-page"> CHECKOUT </router-link>
         </div>
       </div>
     </div>
     <div class="empty-cart" v-else>
       <h2>Your Cart is Empty</h2>
       <div class="continue-link">
-        <router-link :to="{ path: '/catalog' }">
-          Continue Shopping
-        </router-link>
+        <router-link to="/catalog"> Continue Shopping </router-link>
       </div>
     </div>
   </div>
@@ -140,11 +136,11 @@ export default {
   },
   methods: {
     setCartCountToLS() {
-      localStorage.setItem("cart", JSON.stringify(this.myCart));
+      localStorage.setItem("cart", JSON.stringify(this.cart));
     },
     deleteItem(i) {
       if (window.confirm("Are you sure you want to delete this product?")) {
-        this.myCart.splice(i, 1);
+        this.cart.splice(i, 1);
         this.setCartCountToLS();
         this.$store.commit("totalCart");
       }

@@ -79,22 +79,19 @@
                       </h2>
                     </div>
                     <div class="modal-buttons">
-                      <router-link class="view-cart" :to="{ path: '/my-cart' }">
+                      <router-link class="view-cart" to="/my-cart">
                         <button data-bs-dismiss="modal" aria-label="Close">
                           View My Cart ({{ this.$store.state.cartTotal }})
                         </button>
                       </router-link>
-                      <router-link
-                        :to="{ path: '/profile-page' }"
-                        class="checkout"
-                      >
+                      <router-link to="/profile-page" class="checkout">
                         <button data-bs-dismiss="modal" aria-label="Close">
                           Checkout
                         </button>
                       </router-link>
                     </div>
                     <div class="continue">
-                      <router-link :to="{ path: '/catalog' }">
+                      <router-link to="/catalog">
                         <button data-bs-dismiss="modal" aria-label="Close">
                           Continue Shopping
                         </button>
@@ -135,9 +132,7 @@
     <div class="empty-wishlist" v-else>
       <h2>Wishlist Is Empty</h2>
       <div class="continue-link">
-        <router-link :to="{ path: '/catalog' }">
-          Continue Shopping
-        </router-link>
+        <router-link to="/catalog"> Continue Shopping </router-link>
       </div>
     </div>
   </div>

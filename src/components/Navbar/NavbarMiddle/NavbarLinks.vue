@@ -5,13 +5,13 @@
       <span class="open-search">Search</span>
     </div>
     <div class="user">
-      <router-link :to="{ path: '/profile-page' }">
+      <router-link to="/profile-page">
         <i class="fa-regular fa-user"></i
       ></router-link>
       <span>Account</span>
     </div>
     <div class="fav">
-      <router-link :to="{ path: '/wishlist' }">
+      <router-link to="/wishlist">
         <i class="fa-regular fa-heart"
           ><span>{{ this.$store.state.favTotal }}</span></i
         >
@@ -19,7 +19,7 @@
       <span>Wishlist</span>
     </div>
     <div class="compare">
-      <router-link :to="{ path: '/compare' }">
+      <router-link to="/compare">
         <i class="fa-solid fa-arrow-rotate-left">
           <span class="compare-num">{{ this.$store.state.compareTotal }}</span>
         </i>
@@ -43,7 +43,7 @@
       <div class="purchase d-flex flex-column" ref="cartPurchase">
         <div class="heading">
           <div class="home-cart-img">
-            <router-link @click="toggleCart()" :to="{ path: '/' }"
+            <router-link @click="toggleCart()" to="/"
               ><img src="@/assets/logo.webp" alt="Electrbox Logo"
             /></router-link>
           </div>
@@ -108,7 +108,7 @@
         <div class="empty-cart" v-else>
           <h2>Your Cart is Empty</h2>
           <div class="continue-link">
-            <router-link :to="{ path: '/catalog' }" @click="toggleCart()">
+            <router-link to="/catalog" @click="toggleCart()">
               Continue Shopping
             </router-link>
           </div>
@@ -122,20 +122,12 @@
             Note: Taxes and shipping calculated at checkout
           </div>
           <div>
-            <router-link
-              @click="toggleCart()"
-              class="view-cart"
-              :to="{ path: '/my-cart' }"
-            >
+            <router-link @click="toggleCart()" class="view-cart" to="/my-cart">
               VIEW MY CART ({{ this.$store.state.cartTotal }})
             </router-link>
           </div>
           <div>
-            <router-link
-              @click="toggleCart()"
-              class="pay"
-              :to="{ path: '/profile-page' }"
-            >
+            <router-link @click="toggleCart()" class="pay" to="/profile-page">
               CHECKOUT
             </router-link>
           </div>

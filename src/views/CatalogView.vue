@@ -86,25 +86,19 @@
                         </h2>
                       </div>
                       <div class="modal-buttons">
-                        <router-link
-                          class="view-cart"
-                          :to="{ path: '/my-cart' }"
-                        >
+                        <router-link class="view-cart" to="/my-cart">
                           <button data-bs-dismiss="modal" aria-label="Close">
                             View My Cart ({{ this.$store.state.cartTotal }})
                           </button>
                         </router-link>
-                        <router-link
-                          class="checkout"
-                          :to="{ path: '/Profile-Page' }"
-                        >
+                        <router-link class="checkout" to="/Profile-Page">
                           <button data-bs-dismiss="modal" aria-label="Close">
                             Checkout
                           </button>
                         </router-link>
                       </div>
                       <div class="continue">
-                        <router-link :to="{ path: '/catalog' }">
+                        <router-link to="/catalog">
                           <button data-bs-dismiss="modal" aria-label="Close">
                             Continue Shopping
                           </button>

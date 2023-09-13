@@ -99,9 +99,7 @@
     <div class="empty-compare" v-else>
       <h2>Comparison Is Empty</h2>
       <div class="continue-link">
-        <router-link :to="{ path: '/catalog' }">
-          Continue Shopping
-        </router-link>
+        <router-link to="/catalog"> Continue Shopping </router-link>
       </div>
     </div>
   </div>

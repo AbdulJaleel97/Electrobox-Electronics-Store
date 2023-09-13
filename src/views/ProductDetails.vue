@@ -1,7 +1,7 @@
 <template>
   <div class="product-details">
     <h2 class="item-header">
-      <router-link :to="{ path: '/catalog' }">Products</router-link> |
+      <router-link to="/catalog">Products</router-link> |
       {{ myProduct[0].description }}
     </h2>
     <div class="item" v-for="product in myProduct" :key="product.id">
@@ -125,22 +125,19 @@
                     </div>
                   </div>
                   <div class="modal-buttons">
-                    <router-link class="view-cart" :to="{ path: '/my-cart' }">
+                    <router-link class="view-cart" to="/my-cart">
                       <button data-bs-dismiss="modal" aria-label="Close">
                         View My Cart ({{ this.$store.state.cartTotal }})
                       </button>
                     </router-link>
-                    <router-link
-                      class="checkout"
-                      :to="{ path: '/Profile-Page' }"
-                    >
+                    <router-link class="checkout" to="/Profile-Page">
                       <button data-bs-dismiss="modal" aria-label="Close">
                         BUY IT NOW
                       </button>
                     </router-link>
                   </div>
                   <div class="continue">
-                    <router-link :to="{ path: '/catalog' }">
+                    <router-link to="/catalog">
                       <button data-bs-dismiss="modal" aria-label="Close">
                         Continue Shopping
                       </button>
@@ -150,7 +147,7 @@
               </div>
             </div>
           </div>
-          <router-link class="checkout" :to="{ path: '/Profile-Page' }">
+          <router-link class="checkout" to="/Profile-Page">
             CHECKOUT
           </router-link>
         </div>

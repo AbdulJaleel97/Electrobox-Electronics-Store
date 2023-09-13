@@ -1,6 +1,6 @@
 <template>
   <div class="logo">
-    <router-link :to="{ path: '/' }"
+    <router-link to="/"
       ><img src="@/assets/logo.webp" alt="Merchandise!"
     /></router-link>
   </div>

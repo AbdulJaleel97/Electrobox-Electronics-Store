@@ -9,7 +9,7 @@
           text-decoration: underline;
           font-size: 16px;
         "
-        :to="{ path: '/' }"
+        to="/"
         >Go Back</router-link
       >
     </h2>
