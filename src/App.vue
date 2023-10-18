@@ -14,11 +14,11 @@
 
 <script>
 import SidebarView from "@/views/SidebarView.vue";
-
 import NavbarView from "@/views/NavbarView.vue";
 import FooterView from "@/views/FooterView.vue";
 import ScrollToTop from "@/views/ScrollToTop.vue";
 import LoadingOverlay from "@/views/LoadingOverlay.vue";
+
 export default {
   data() {
     return {

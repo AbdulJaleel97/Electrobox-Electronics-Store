@@ -1,12 +1,12 @@
 <template>
-  <div class="popular-products">
+  <div class="products-swiper">
     <div class="slide-heading">
       <h4>{{ text }}</h4>
       <div class="nav-buttons">
-        <button class="popular-prev">
+        <button class="products-prev">
           <i class="fa-solid fa-chevron-left"></i>
         </button>
-        <button class="popular-next">
+        <button class="products-next">
           <i class="fa-solid fa-chevron-right"></i>
         </button>
       </div>
@@ -16,7 +16,7 @@
       :modules="modules"
       :slides-per-view="window.width > 991 ? 4 : 2"
       :space-between="15"
-      :navigation="{ nextEl: '.popular-next', prevEl: '.popular-prev' }"
+      :navigation="{ nextEl: '.products-next', prevEl: '.products-prev' }"
     >
       <SwiperSlide v-for="product in products" :key="product.id">
         <div class="card">
@@ -322,7 +322,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.popular-products {
+.products-swiper {
   margin-top: 80px;
   margin-bottom: 60px;
   color: var(--bg-color);
