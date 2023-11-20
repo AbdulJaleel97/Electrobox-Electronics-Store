@@ -23,15 +23,6 @@
           <div class="img-holder flex-center">
             <div
               class="imgs"
-              @click="
-                this.$router.push({
-                  name: 'product',
-                  params: {
-                    id: product.id,
-                    description: product.description,
-                  },
-                })
-              "
               style="cursor: pointer"
             >
               <img
