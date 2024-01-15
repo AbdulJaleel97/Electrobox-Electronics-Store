@@ -9,7 +9,7 @@
           accumsan turpis posuere cursus ultricies. Ut nunc justo, faucibus eget
           elit quis, vehicula rhoncus nulla. Phasellus convallis sem nec
           facilisis commodo. Fusce ut molestie turpis. Suspendisse aliquet sed
-          massa in vulputate. Quisque gravida suscipit tincidunt.
+          massa in vulputate. Quisque gravida suscipit tincidut.
         </p>
       </div>
       <div class="item">

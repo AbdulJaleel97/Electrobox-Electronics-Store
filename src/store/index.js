@@ -416,6 +416,7 @@ export default createStore({
       },
     ],
 
+    // Cart , Compare , Favourite Products And Total Count
     cart: localStorage.getItem("cart")
       ? JSON.parse(localStorage.getItem("cart"))
       : [],
@@ -441,6 +442,7 @@ export default createStore({
       ? JSON.parse(localStorage.getItem("ProductStatus"))
       : [],
   },
+
   mutations: {
     totalCart(state) {
       state.cartTotal = localStorage.getItem("cart")
