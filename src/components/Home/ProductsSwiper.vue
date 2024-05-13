@@ -21,10 +21,7 @@
       <SwiperSlide v-for="product in products" :key="product.id">
         <div class="card">
           <div class="img-holder flex-center">
-            <div
-              class="imgs"
-              style="cursor: pointer"
-            >
+            <div class="imgs" style="cursor: pointer">
               <img
                 :src="product.firstImg"
                 class="card-img-top first"
