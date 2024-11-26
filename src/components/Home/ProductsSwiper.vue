@@ -116,6 +116,11 @@
           </div>
           <div class="modal-body">
             <div class="modal-info">
+              <img
+                style="max-width: 100%"
+                :src="addedProduct.firstImg"
+                alt="Product img"
+              />
               <h2>
                 Product Added Successfully to the Cart
                 <i class="fa-regular fa-circle-check"></i>
@@ -161,6 +166,7 @@ export default {
       window: {
         width: 0,
       },
+      addedProduct: "",
     };
   },
   props: {
@@ -209,6 +215,7 @@ export default {
         this.setCartToLS();
         this.$store.commit("totalCart");
       }
+      this.addedProduct = product;
     },
     checkCartLS() {
       localStorage.getItem("cart")
