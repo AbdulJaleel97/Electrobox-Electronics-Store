@@ -116,15 +116,25 @@
           </div>
           <div class="modal-body">
             <div class="modal-info">
+              <h2>
+                Product Added Successfully to the Cart
+                <i class="fa-regular fa-circle-check"></i>
+              </h2>
               <img
                 style="max-width: 100%"
                 :src="addedProduct.firstImg"
                 alt="Product img"
               />
-              <h2>
-                Product Added Successfully to the Cart
-                <i class="fa-regular fa-circle-check"></i>
-              </h2>
+              <span
+                style="
+                  color: grey;
+                  text-align: center;
+                  margin-bottom: 20px;
+                  display: block;
+                "
+              >
+                {{ addedProduct.title }}
+              </span>
             </div>
             <div class="modal-buttons">
               <router-link class="view-cart" to="/my-cart">

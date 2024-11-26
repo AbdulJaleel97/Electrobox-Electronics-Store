@@ -4,9 +4,7 @@
       <div class="row large-screens">
         <div class="col-md-4 one">
           <h2 class="header">Contact Us</h2>
-          <p class="para">
-            Burj Khalifa - Room 12154-Downtown Dubai - United Arab Emirates
-          </p>
+          <p class="para">El-Zawya City - Jelato's Palace</p>
           <a class="mail" href="mailto:AbdulJaleelSaeed1997@gmail.com"
             >AbdulJaleelSaeed1997@gmail.com</a
           >
